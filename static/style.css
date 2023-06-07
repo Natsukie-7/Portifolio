@@ -1,0 +1,103 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Variaveis */
+:root {
+    --cor-do-texto: rgb(90, 221, 129);
+    --cor-do-background-header: rgb(11, 6, 15);
+    --cor-bordas: rgb(33, 31, 43);
+    --cor-branca: rgb(248, 248, 248);
+}
+
+/* Formatação da pagina */
+html,
+body {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--cor-do-texto);
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+
+    background: var(--cor-do-background-header);
+    transition: all ease-in-out 0.6s;
+    z-index: 8001;
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid var(--cor-bordas);
+    border-radius: 50%;
+}
+
+#header .profile h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+#header .profile .social-links a {
+    font-size: 1rem;
+    background: var(--cor-bordas);
+    color: var(--cor-do-texto);
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+
+#header .profile .social-links .icone:hover {
+    background: var(--cor-branca);
+    color: rgb(11, 6, 15);
+}
+
+/* nav-menu */
+.nav-menu {
+    padding: 1.5rem;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: rgb(136, 136, 136);
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 24px;
+    padding-right: 0.7rem;
+    color: rgb(121, 121, 121);
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover > i {
+    color: rgb(72, 0, 100);
+}
