@@ -3,10 +3,14 @@
 
 /* Variaveis */
 :root {
-    --cor-do-texto: rgb(90, 221, 129);
+    /* cores */
+    --cor-do-texto: rgb(0, 0, 0);
     --cor-do-background-header: rgb(11, 6, 15);
-    --cor-bordas: rgb(33, 31, 43);
-    --cor-branca: rgb(248, 248, 248);
+    --cor-bordas: rgb(102, 102, 102);
+    --cor-branca: #fff;
+
+    /* distancia */
+    --distancia-do-main-header: 300px;
 }
 
 /* Formatação da pagina */
@@ -26,7 +30,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: var(--distancia-do-main-header);
 
     background: var(--cor-do-background-header);
     transition: all ease-in-out 0.6s;
@@ -47,6 +51,7 @@ body {
     padding: 0;
     font-weight: 700;
     text-align: center;
+    color: var(--cor-branca);
 }
 
 #header .profile .social-links a {
@@ -100,4 +105,40 @@ body {
 .nav-menu .active:focus i,
 .nav-menu li:hover > i {
     color: rgb(72, 0, 100);
+}
+
+/* Aba Principal */
+
+#main {
+    margin-left: var(--distancia-do-main-header);
+}
+
+section#inicio {
+    background-image: url(img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+section#inicio h2 {
+    font-size: 4rem;
+}
+
+section#inicio span#subtitle {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 10px #000000;
+}
+
+
+section#inicio div#arraste a {
+    text-decoration: none;
+    color: var(--cor-branca);
 }
