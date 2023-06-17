@@ -111,6 +111,7 @@ body {
 
 #main {
     margin-left: var(--distancia-do-main-header);
+    transition: all ease-out 1s;
 }
 
 section#inicio {
@@ -142,3 +143,54 @@ section#inicio div#arraste a {
     text-decoration: none;
     color: var(--cor-branca);
 }
+
+i.menu-mobile {
+    position: fixed;
+    color: #fff;
+    background-color: #632bff;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s; 
+}
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+
+@media (max-width: 900px) {
+    #header{
+        left: -300px;
+    } 
+
+    i.menu-mobile {
+        display: flex;
+    }
+
+    section#inicio h2 {
+        font-size: 3rem;
+    }
+
+    section#inicio span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+}
+
