@@ -194,3 +194,35 @@ i.menu-mobile {
 
 }
 
+/* Sobre */
+section#sobre h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+section#sobre h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Barra de Scroll Lateral */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    width: 10px;
+    box-shadow: inset 0 0 .6rem #000000;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+/* Habilidades */
+
+section.section-bg {
+    background-color: #b7bff0;
+}
