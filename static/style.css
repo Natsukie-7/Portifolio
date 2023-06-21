@@ -200,6 +200,13 @@ section#sobre h2{
     font-weight: 900;
 }
 
+.img-fluid {
+    height: 400px; /* Defina a altura desejada */
+    object-fit: cover; /* Redimensiona a imagem para preencher o espaço definido */
+    object-position: center top; /* Define a posição de visualização da imagem */
+    padding-left: 50px;
+  }
+
 section#sobre h3 {
     font-size: 1.5rem;
     font-weight: 600;
